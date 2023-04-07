@@ -2,19 +2,19 @@
 
 <p> dotnet new webapi </p>
 
-# Packeages
+<h2> Packeages </h2>
 
-dotnet add package Microsoft.EntityFrameworkCore ***
-dotnet add package Microsoft.EntityFrameworkCore.Design
-dotnet add package MySql.Data
-dotnet add package Pomelo.EntityFrameworkCore.MySql
+<p> dotnet add package Microsoft.EntityFrameworkCore </p><br>
+<p> dotnet add package Microsoft.EntityFrameworkCore.Design </p><br>
+<p> dotnet add package MySql.Data </p><br>
+<p> dotnet add package Pomelo.EntityFrameworkCore.MySql </p><br>
 
-# Migrations
+<h2> Migrations </h2>
 
-dotnet ef migrations add CreateDatabase
-dotnet ef database update
+dotnet ef migrations add CreateDatabase </p><br>
+dotnet ef database update </p><br>
 
-# rodar
+<h2> Rodar </h2>
 
-dotnet build
-dotnet run
+<p> dotnet build </p><br>
+<p> dotnet run </p><br>
