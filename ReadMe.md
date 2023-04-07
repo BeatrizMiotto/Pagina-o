@@ -4,7 +4,7 @@ dotnet new webapi
 
 # Packeages
 
-dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore ***
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package MySql.Data
 dotnet add package Pomelo.EntityFrameworkCore.MySql
