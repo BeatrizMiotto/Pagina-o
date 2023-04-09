@@ -25,13 +25,12 @@ public class TodoController : ControllerBase
             }
             return Ok();
         }
-        [HttpGet(template:"{skip}/{take}")]
-        public async Task<IActionResult>GetAsync([FromServices]AppDbContext context, 
-        [FromRoute] int skip = 0, [FromRoute] int take = 25)
+        [HttpGet(template:"")]
+        public async Task<IActionResult>GetAsync([FromServices]AppDbContext context)
         {
             var total = await context.Todos.CountAsync(); //conta todos os elementos do banco
-            var todos = await context.Todos.AsNoTracking().Skip(skip).Take(take).ToListAsync();
+            //var todos = await context.Todos.AsNoTracking().Skip(skip).Take(take).ToListAsync();
 
-            return Ok(new{total, data = todos});
+            return Ok(new{total, context.Todos /**data = todos*/});
         }
 }
